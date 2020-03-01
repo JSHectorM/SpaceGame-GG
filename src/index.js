@@ -3,7 +3,7 @@ const url = require ('url');
 const path = require ('path');
 
 //Codigo para actualizar la pantalla principal sin cerrarla
-// solo durate la produccion se ejecuta este modulo
+// solo durate la produccion se ejecuta este modulo 
 if(process.env.NODE_ENV !== 'production'){
 
     require ('electron-reload')(__dirname, {
