@@ -2,6 +2,7 @@
 const { app, BrowserWindow }= require('electron');
 const url = require ('url');
 const path = require ('path');
+var mysql = require('mysql');
 
 //Codigo para actualizar la pantalla principal sin cerrarla
 // solo durate la produccion se ejecuta este modulo 
