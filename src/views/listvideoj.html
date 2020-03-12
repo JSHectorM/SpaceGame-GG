@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Administracion de Videojegos </title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="mainWrapper">
+        <h1> Lista de Videojuegos </h1>
+
+        <button type="button" class="btn btn-success"> Ingresar Nuevo </button>
+
+        <table class="table table-hover">
+            <tbody>
+                <tr class="table-active">
+
+                    <tr class="table-primary">
+                        <th scope="row">Id</th>
+                        <td>Nombre Videojuego</td>
+                        <td>Opciones</td>
+                    </tr>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table table-hover">
+            <tbody>
+                <tr class="table-active">
+                    <tr class="table-secondary">
+                        <th scope="row">id</th>
+                        <td>nombre</td>
+                        <td>
+                            <button type="button" class="btn btn-info">Modificar</button>
+                            <button type="button" class="btn btn-danger">Borrar</button>
+                        </td>
+                    </tr>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <script>
+        require('./index.js')
+    </script>
+</body>
+
+</html>
