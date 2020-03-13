@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <title>Información de apartado </title>
+
+</head>
+
+<body>
+    <center>
+        <fieldset>
+            <div class="col" style="max-width: 40%;">
+                <div class="form-group">
+                    <fieldset>
+                        <label class="control-label" for="readIdImput">ID apartado:</label>
+                        <input class="form-control" id="readIdImput" type="text" placeholder="xxxx" readonly="">
+                    </fieldset>
+                </div>
+            </div>
+            <div class="col" style="max-width: 40%;">
+                <div class="form-group">
+                    <fieldset>
+                        <label class="control-label" for="readClienteImput">Cliente:</label>
+                        <input class="form-control" id="readClienteImput" type="text" placeholder="Nombre cliente"
+                            readonly="">
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="card border-primary mb-3" style="max-width: 30rem;">
+                <div class="card-header">Información Apartado</div>
+                <div class="card-body">
+                    <p class="card-text">Id: 001 Cantidad: 2 Nombre: Nier Automata $2000</p>
+                    <p class="card-tex1">Id: 005 Cantidad: 1 Nombre: GTA5 $1000</p>
+                    <p class="card-tex2">Fecha: 25-01-20</p>
+                    <p class="card-tex3">Vendedor: A</p>
+                </div>
+            </div>
+            <div class="col" style="max-width: 20%;">
+                <div class="form-group">
+                    <label class="control-label" for="readTotal">TOTAL:</label>
+                    <input class="form-control" id="readTotal" type="text" placeholder="$3000" readonly="">
+                </div>
+            </div>
+            <div class="col" style="max-width: 20%;">
+                <div class="form-group">
+                    <label class="control-label" for="readPagado">Pagado:</label>
+                    <input class="form-control" id="readPagado" type="text" placeholder="$500" readonly="">
+                </div>
+            </div>
+            <div class="col" style="max-width: 20%;">
+                <div class="form-group">
+                    <label class="control-label" for="readDiferencia">Diferencia:</label>
+                    <input class="form-control" id="readDiferencia" type="text" placeholder="$2500" readonly="">
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="validarVenta()">Finalizar Venta</button>
+            </div>
+
+        </fieldset>
+    </center>
+
+
+</body>
+
+</html>
