@@ -9,6 +9,7 @@ var mysql = require('mysql');
 
 //Codigo para actualizar la pantalla principal sin cerrarla
 // solo durate la produccion se ejecuta este modulo 
+
 if(process.env.NODE_ENV !== 'production'){
 
     require ('electron-reload')(__dirname, {
@@ -16,6 +17,8 @@ if(process.env.NODE_ENV !== 'production'){
     })
 
 }
+
+
 
 let mainWindow
 let logInWindow
@@ -31,6 +34,7 @@ app.on('ready', () => {
 
     }))
 
+<<<<<<< Updated upstream
     const mainMenu = Menu.buildFromTemplate(templateMenu);
     Menu.setApplicationMenu(mainMenu);
 
@@ -74,3 +78,23 @@ const templateMenu = [
         ]
     }
 ];
+=======
+});
+
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+   host: 'localhost',
+   user: 'root',
+   password: null,
+   database: 'gg',
+   port: 3306
+});
+connection.connect(function(error){
+   if(error){
+      throw error;
+   }else{
+      console.log('Conexion correcta.');
+   }
+});
+connection.end();
+>>>>>>> Stashed changes
