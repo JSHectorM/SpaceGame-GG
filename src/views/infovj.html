@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIENVENIDO A "G.G. SAPCE OF GAME system" XD</title>
+    <title>Informacion del VideoJuego</title>
     <link rel='stylesheet' href='css/bootstrap.min.css'>
 </head>
 <header>
@@ -19,13 +19,10 @@
           <a class="nav-link" href="index.html">Catálogo Principal<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Ranking</a>
+          <a class="nav-link" href="ranking.html">Ranking</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Ubicanos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">login</a>
+          <a class="nav-link" href="https://www.google.com/maps/place/Biblioteca/@19.361102,-99.073116,14z/data=!4m5!3m4!1s0x0:0x8d9497cf7578d20d!8m2!3d19.3611015!4d-99.0731163?hl=es-MX&shorturl=1">Ubicanos</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -39,60 +36,42 @@
   <div class="row" style="justify-content: center;">
     <div class="card mb-3">
     <h3 class="card-header">
-      $query = ('SElECT ')
+      Nier: Automata - Game of the Yorha Edition
     </h3>
     <div class="card-body">
-      <h5 class="card-title">Consola/s</h5>
+      <h5 class="card-title">PlayStation, Xbox
+      </h5>
     </div>
     <center>
-      <img style="max-width: 50%; max-height: 75%; display: block;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22318%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20318%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_158bd1d28ef%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_158bd1d28ef%22%3E%3Crect%20width%3D%22318%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22129.359375%22%20y%3D%2297.35%22%3EImage%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" alt="Card image">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/51IWXMv0oYL._SX385_.jpg" width="140p" height="190p" alt="Nier">
     </center>
-    <div class="card-body">
-      <p class="card-text">
-        <script>
 
-        </script>
-      </p>
-    </div>
     <ul class="list-group list-group-flush">
-      <li class="list-group-item">$Costo</li>
-      <li class="list-group-item">Rating</li>
-      <li class="list-group-item">En stock</li>
+      <li class="list-group-item">Costo: $1000</li>
+      <li class="list-group-item">Rating: X2</li>
+      <li class="list-group-item">Stock: 27</li>
       <li>
         <center>
+          <a href="cart.html">
           <button type="button" class="btn btn-primary disabled" id="cart">Agregar al carrito</button>
+        </a>
         </center>
       </li>
     </ul>
     </div>
   </div>
-  <button type="button" value="connect to mysql" id="btn"/>
-  
 </body>
-<script>
-  document.getElementById("btn").addEventListener("click", () => {
-    var mysql = require('mysql');
-
-    var connection = mysql.createConnection({
-      host     : 'localhost',
-      user     : 'root',
-      password : null, // or the original password : 'apaswword'
-      database : 'gg'
-    });
-
-    connection.connect((err) =>{
-      if(err){
-        return console.log(err.stack);
-      }
-      console.log("Connection succesfully");
-    });
-
-    //queries
-
-    connection.end(() => {
-      console.log("Connection closed");
-    });
-
-},false);
-</script>
+<br>
+<br>
+<footer>
+    <div class="alert alert-dismissible alert-warning">
+        
+        <center><img src="logo1.png" width="60" height="40" alt="logo1"></center>
+        <center>
+            <p class="mb-0">Avenida San Rafael Atlixco 186, Colonia Vicentina, 09340 Iztapalapa, CDMX</p>
+            <p class="mb-0">UAM Iztapalapa Sitio Oficial, Copyright Derechos Reservados</p>
+            <p class="mb-0">Para conocer al equipo de desarrollo, solo tienes que dar clic  <a href="#" class="alert-link">aquí!</a>.</p>
+        </center>
+      </div>    
+  </footer> 
 </html>
