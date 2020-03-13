@@ -38,9 +38,13 @@ app.on('ready', () => {
     const mainMenu = Menu.buildFromTemplate(templateMenu);
     Menu.setApplicationMenu(mainMenu);
 
+
     mainWindow.on('closed', () => {
         app.quit();
     });
+
+    //DEv Tols
+    //mainWindow.webContents.openDevTools()
 
 });
 
@@ -78,23 +82,4 @@ const templateMenu = [
         ]
     }
 ];
-=======
-});
 
-var mysql = require('mysql');
-var connection = mysql.createConnection({
-   host: 'localhost',
-   user: 'root',
-   password: null,
-   database: 'gg',
-   port: 3306
-});
-connection.connect(function(error){
-   if(error){
-      throw error;
-   }else{
-      console.log('Conexion correcta.');
-   }
-});
-connection.end();
->>>>>>> Stashed changes
