@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 const { app, BrowserWindow, Menu }= require('electron');
+=======
+
+const { app, BrowserWindow }= require('electron');
+>>>>>>> beta
 const url = require ('url');
 const path = require ('path');
+var mysql = require('mysql');
 
 
 

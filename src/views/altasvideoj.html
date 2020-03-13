@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nuevo Videojuego </title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+</head>
+
+<body>
+    <h1> Nuevo Videojuego </h1>
+    <div class="text-center">
+        <div class="col" style="max-width: 100%;">
+        <form>
+            <fieldset>
+                <div class="form-group row">
+                    <label class="col-form-label" for="inputNombreVj">  Nombre Videojuego : </label>
+                    <input type="text" class="form-control" placeholder="Titulo del Videojuego" id="inputNombreVj">
+                </div>
+
+                <br>
+
+                <div class="form-group">
+                    <label for="descripcionVj">Descripcion</label>
+                    <textarea class="form-control" id="descripcionVj" rows="3"></textarea>
+                </div>
+
+                <br>
+
+                <div class="form-group row">
+                    <label class="col-form-label" for="inputGenero">  Genero: </label>
+                    <input type="text" class="form-control" placeholder="Genero del Videojuego" id="inputGenero">
+                </div>
+
+                <br>
+
+                <div class="form-group row">
+                    <label class="col-form-label" for="inputConsola">  Consola: </label>
+                    <input type="text" class="form-control" placeholder="Consola para jugar" id="inputConsola">
+                </div>
+
+                <br>
+
+                <div class="form-group row">
+                    <label class="col-form-label" for="inputAño">  Año: </label>
+                    <input type="text" class="form-control" placeholder="Año de salida" id="inputAño">
+                </div>
+
+                <br>
+
+                <div class="form-group row">
+                    <label class="col-form-label" for="inputCantStock">  Cantidad en Stock: </label>
+                    <input type="text" class="form-control" placeholder="Cantidad disponible" id="inputCantStock">
+                </div>
+
+                <br>
+
+                <div class="form-group row">
+                    <label class="col-form-label" for="inputCantVend">  Cantidad Vendida: </label>
+                    <input type="text" class="form-control" placeholder="Cantidad Vendida" id="inputCantVend">
+                </div>
+
+                <br>
+
+                <div class="form-group row">
+                    <label class="col-form-label" for="inputPrecio">  Precio: </label>
+                    <input type="text" class="form-control" placeholder="Precio de tienda" id="inputPrecio">
+                </div>
+
+                <br>
+                <br>
+
+                <button type="button" class="btn btn-success" id="Guardar"> Guardar </button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+        
+    <script>
+        document.getElementById("Guardar").addEventListener("click", () => {  
+        },  false);
+    </script>
+</body>
+
+</html>
